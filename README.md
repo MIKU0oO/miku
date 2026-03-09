@@ -1,5 +1,5 @@
 # miku
-
+#
 getdata 将爬取人民日报网站限定年份的新闻文章，并以一定格式储存于articals.json
 transport 将articals.json的格式转为便于训练的 training_data。jsonl
 train_data 基于tf-idf的词向量矩阵相似度匹配相关若干文章
