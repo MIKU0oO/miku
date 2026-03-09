@@ -1,4 +1,4 @@
-# miku
+# rag问答（NLP课程设计）
 #
 getdata 将爬取人民日报网站限定年份的新闻文章，并以一定格式储存于articals.json
 #
