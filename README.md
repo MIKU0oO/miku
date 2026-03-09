@@ -1,1 +1,7 @@
 # miku
+
+##getdata 将爬取人民日报网站限定年份的新闻文章，并以一定格式储存于articals.json
+##transport 将articals.json的格式转为便于训练的 training_data。jsonl
+##train_data 基于tf-idf的词向量矩阵相似度匹配相关若干文章
+##BM_25 基于BM25算法或者BGE embedding相似度匹配相关若干文章，再使用BGE reranker进行重排序
+##run_qa 从train_data或BM_25中调用函数获取相关文章，组合为prompt向调用的gpt提问
