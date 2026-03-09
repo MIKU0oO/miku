@@ -5,15 +5,12 @@ import random
 import time
 import requests
 
-key ="sk-dK0KZUS61bZBBJHAg5O3XODwILEj6v9DgeoMWZyFGnZjHWnN"
+key ="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 url = "https://xiaoai.plus/v1/chat/completions"
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer sk-dK0KZUS61bZBBJHAg5O3XODwILEj6v9DgeoMWZyFGnZjHWnN"
+    "Authorization": "Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 }
-
-
-#getdata完成了数据爬取，train_data将数据转为便于训练的格式，再利用tf-idf锁定最相似的文章
 
 def get_openai_response(query,prompts):
     try:
@@ -109,4 +106,4 @@ def evaluate(queries: list):
         "推进制度集成创新；服务海峡两岸融合发展；深化共建“一带一路”",
         "16",
         "中国科协科技创新部、湖南省委宣传部、上海大学、《历史研究》、《读者》、《分子植物》、《问天少年》、南方杂志社、中华医学会杂志社",
-    ]  # EM 0.4
+    ] 
